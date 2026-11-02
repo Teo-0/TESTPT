@@ -1,0 +1,21 @@
+name: iOS build
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile simulator target without signing
+        run: >-
+          xcodebuild -project RawCamera.xcodeproj -scheme RawCamera
+          -configuration Debug -sdk iphonesimulator
+          -destination 'generic/platform=iOS Simulator'
+          -derivedDataPath DerivedData CODE_SIGNING_ALLOWED=NO build
+      - name: Compile device target without signing
+        run: >-
+          xcodebuild -project RawCamera.xcodeproj -scheme RawCamera
+          -configuration Release -sdk iphoneos
+          -destination 'generic/platform=iOS'
+          -derivedDataPath DerivedData CODE_SIGNING_ALLOWED=NO build

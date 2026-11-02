@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scegli e scarica i sorgenti di Raw Camera per iOS 17 oppure Raw Camera Legacy per iPhone 8 con iOS 11.">
+  <title>Raw Camera · Scegli la versione</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101419; color: #f1f3f5; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 1040px; margin: auto; padding: 56px 24px; }
+    .brand { color: #e2bd73; font-size: 13px; letter-spacing: .18em; }
+    h1 { font-size: 42px; line-height: 1.15; margin: 22px 0; }
+    h2 { line-height: 1.3; }
+    .intro { max-width: 700px; color: #bec7d1; }
+    .cards { display: flex; flex-wrap: wrap; margin: 32px -10px; }
+    article { flex: 1 1 320px; margin: 10px; padding: 28px; border: 1px solid #414c59; border-radius: 18px; background: #19212a; }
+    article p { color: #c5cdd5; }
+    .tag { color: #e2bd73; font-size: 14px; }
+    .button { display: inline-block; padding: 12px 18px; background: #e2bd73; color: #13181e; border-radius: 9px; text-decoration: none; font-weight: 700; }
+    a { color: #f1cf91; }
+    a:focus { outline: 3px solid white; outline-offset: 5px; }
+    small { display: block; margin-top: 14px; color: #bec7d1; }
+    .note { padding: 20px 24px; border-left: 3px solid #e2bd73; background: #19212a; }
+    li { margin-bottom: 10px; }
+    footer { color: #bec7d1; font-size: 14px; margin-top: 36px; }
+    @media (max-width: 480px) { main { padding: 32px 18px; } h1 { font-size: 32px; } article { padding: 22px; } }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">RAW CAMERA / IPHONE</div>
+  <h1>Due versioni.<br>Lo stesso originale RAW.</h1>
+  <p class="intro">Scegli la versione per il tuo iPhone. Entrambe salvano foto RAW Bayer in DNG senza filtri aggiunti dall’app, con verifica del supporto della fotocamera.</p>
+  <div class="note"><strong>Scarichi un progetto Xcode, non un’app già installabile.</strong> I pacchetti sono sorgenti ZIP: per installarli occorrono un Mac, Xcode e la firma con un Team Apple. Al momento non sono disponibili IPA firmati o link App Store/TestFlight.</div>
+  <section class="cards" aria-label="Versioni disponibili">
+    <article>
+      <span class="tag">IPHONE 8 · iOS 11+</span>
+      <h2>Raw Camera Legacy</h2>
+      <p>Interfaccia UIKit e acquisizione con le API di iOS 11. È la versione da scegliere per iPhone 8, anche con iOS successivi compatibili con quel modello.</p>
+      <a class="button" href="downloads/raw-camera-ios11-source.zip" download>Scarica Legacy · sorgenti ZIP</a>
+      <small>Progetto: RawCameraLegacy.xcodeproj<br>Per iOS 11: Xcode 14.x su un Mac compatibile.</small>
+    </article>
+    <article>
+      <span class="tag">IPHONE CON iOS 17 O SUCCESSIVO</span>
+      <h2>Raw Camera</h2>
+      <p>Interfaccia SwiftUI per le versioni recenti di iOS. Richiede una fotocamera che esponga RAW Bayer. Non è installabile su iPhone 8.</p>
+      <a class="button" href="downloads/raw-camera-ios17-source.zip" download>Scarica moderna · sorgenti ZIP</a>
+      <small>Progetto: RawCamera.xcodeproj<br>Xcode 15 o successivo su un Mac compatibile.</small>
+    </article>
+  </section>
+  <h2>Dal download al primo scatto</h2>
+  <ol>
+    <li>Scarica ed estrai lo ZIP sul Mac. All’interno trovi progetto e istruzioni specifiche.</li>
+    <li>Apri il progetto in Xcode e scegli il tuo Team in <strong>Signing &amp; Capabilities</strong>. Collega l’iPhone e selezionalo come destinazione.</li>
+    <li>Premi <strong>Run</strong>, consenti la fotocamera e scatta. Trovi i DNG in File, nella cartella dell’app, e puoi condividere l’originale.</li>
+  </ol>
+  <h2>Cosa aspettarsi</h2>
+  <p class="intro">L’anteprima è elaborata da iOS. Il RAW evita lo sviluppo della normale foto JPEG, ma non garantisce l’assenza di ogni trattamento interno del sensore. ProRAW non viene richiesto; se manca il RAW Bayer, lo scatto rimane disabilitato.</p>
+  <footer>Codice preparato in ambiente Linux. Compilazione con Xcode e prove di acquisizione su iPhone reale ancora da eseguire. Nessun dato viene caricato su server dall’app.</footer>
+</main>
+</body>
+</html>

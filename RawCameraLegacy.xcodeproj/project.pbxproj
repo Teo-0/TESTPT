@@ -1,0 +1,31 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A00000000000000000000001 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1400; TargetAttributes = {A00000000000000000000002 = {CreatedOnToolsVersion = 14.0;};};}; buildConfigurationList = A00000000000000000000003; compatibilityVersion = "Xcode 14.0"; developmentRegion = it; hasScannedForEncodings = 0; knownRegions = (it, en, Base); mainGroup = A00000000000000000000004; productRefGroup = A00000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000002);};
+  A00000000000000000000002 = {isa = PBXNativeTarget; buildConfigurationList = A00000000000000000000006; buildPhases = (A00000000000000000000007, A00000000000000000000008, A00000000000000000000009); buildRules = (); dependencies = (); name = RawCameraLegacy; productName = RawCameraLegacy; productReference = A00000000000000000000010; productType = "com.apple.product-type.application";};
+  A00000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000011, A00000000000000000000012); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  A00000000000000000000004 = {isa = PBXGroup; children = (A00000000000000000000013, A00000000000000000000005); sourceTree = "<group>";};
+  A00000000000000000000005 = {isa = PBXGroup; children = (A00000000000000000000010); name = Products; sourceTree = "<group>";};
+  A00000000000000000000006 = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000014, A00000000000000000000015); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  A00000000000000000000007 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000020, A00000000000000000000021, A00000000000000000000022); runOnlyForDeploymentPostprocessing = 0;};
+  A00000000000000000000008 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+  A00000000000000000000009 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+  A00000000000000000000010 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawCameraLegacy.app; sourceTree = BUILT_PRODUCTS_DIR;};
+  A00000000000000000000011 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 11.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; DEBUG_INFORMATION_FORMAT = dwarf; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug;};
+  A00000000000000000000012 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 11.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; VALIDATE_PRODUCT = YES;}; name = Release;};
+  A00000000000000000000013 = {isa = PBXGroup; children = (A00000000000000000000016, A00000000000000000000017, A00000000000000000000018, A00000000000000000000019); path = RawCameraLegacy; sourceTree = "<group>";};
+  A00000000000000000000014 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RawCameraLegacy/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = "com.teo0.RawCameraLegacy"; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; TARGETED_DEVICE_FAMILY = 1;}; name = Debug;};
+  A00000000000000000000015 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RawCameraLegacy/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = "com.teo0.RawCameraLegacy"; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; TARGETED_DEVICE_FAMILY = 1;}; name = Release;};
+  A00000000000000000000016 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>";};
+  A00000000000000000000017 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>";};
+  A00000000000000000000018 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>";};
+  A00000000000000000000019 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>";};
+  A00000000000000000000020 = {isa = PBXBuildFile; fileRef = A00000000000000000000016;};
+  A00000000000000000000021 = {isa = PBXBuildFile; fileRef = A00000000000000000000017;};
+  A00000000000000000000022 = {isa = PBXBuildFile; fileRef = A00000000000000000000018;};
+ };
+ rootObject = A00000000000000000000001;
+}
